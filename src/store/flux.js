@@ -5,8 +5,23 @@
  */
 const getStore = ({ getStore, getActions, setStore }) => {
     return {
-        store: {},
-        actions: {}
+        store: {
+            characters: null,
+            spells,
+        },
+        actions: {
+
+            getCharacters: () => {
+                fetch("https://hp-api.onrender.com/api/characters/")
+                    .then(response => response.json())
+                    .then(datos => setStore({ characters: datos }))
+            },
+            getSpells: () => {
+                fetch("https://hp-api.onrender.com/api/spells/")
+                    .then(response => response.json())
+                    .then(datos => setStore({ spells: datos }))
+            },
+        }
     }
 }
 
