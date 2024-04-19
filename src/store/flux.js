@@ -7,7 +7,7 @@ const getStore = ({ getStore, getActions, setStore }) => {
     return {
         store: {
             characters: null,
-            spells,
+            spells:null,
         },
         actions: {
 

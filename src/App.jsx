@@ -2,6 +2,7 @@ import React from 'react';
 import injectContext from './store/AppContext';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
+import Characters from './pages/Characters';
 
 const App = () => {
     return (
@@ -9,6 +10,7 @@ const App = () => {
         <BrowserRouter>
             <Routes>
                 <Route path='/' element={<Home />} />
+                <Route path='/characters/:id' element={<Characters />}/>
             </Routes>
         </BrowserRouter>
         </>
