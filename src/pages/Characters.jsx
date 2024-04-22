@@ -9,9 +9,9 @@ const Characters = () => {
     const { id } = useParams()
 
     useEffect(() => {
-        actions.getCharacters(id)
+        actions.getCharacters()
         console.log(id)
-    }, [id])
+    }, [])
 
     const { name, gender, species, house } =
         store.characters;
