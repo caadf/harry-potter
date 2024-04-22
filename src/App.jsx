@@ -3,6 +3,7 @@ import injectContext from './store/AppContext';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Characters from './pages/Characters';
+import Spells from './pages/Spells';
 
 const App = () => {
     return (
@@ -10,7 +11,8 @@ const App = () => {
         <BrowserRouter>
             <Routes>
                 <Route path='/' element={<Home />} />
-               {/*  <Route path='/characters/' element={<Characters />}/> */}
+               <Route path='/Characters/' element={<Characters />}/>
+               <Route path='/Spells/' element={<Spells />}/>
             </Routes>
         </BrowserRouter>
         </>

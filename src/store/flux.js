@@ -6,8 +6,8 @@
 const getStore = ({ getStore, getActions, setStore }) => {
     return {
         store: {
-            characters: null,
-            spells:null,
+            characters: [],
+            spells:[],
         },
         actions: {
 
