@@ -31,8 +31,8 @@ const Home = () => {
                                         <p class="card-text text-dark">Gender: {characters?.gender} <br />
                                                             Hair color: {characters?.species} <br />
                                                             Birth Year: {characters?.house}</p> <br />
-                                        {/* <Link  className="btn btn-info" to={"/detailedpeople/"+numero}>More Details</Link>
-                                        <button className='btn btn-secondary' onClick={() => actions.addFavorites(people.name)}>Favorites</button> */}
+                                         <Link  className="btn btn-info" to={"/characters/"+numero}>More Details</Link>
+                                       {/*  <button className='btn btn-secondary' onClick={() => actions.addFavorites(people.name)}>Favorites</button> */} 
                                     </div>
                             </div>
                         )

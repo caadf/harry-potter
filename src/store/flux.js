@@ -22,10 +22,16 @@ const getStore = ({ getStore, getActions, setStore }) => {
                 .then(response => response.json())
                 .then(datos => setStore({ characters: datos }))
             },
-            getSpells: () => {
+           /*  getSpells: () => {
                 fetch("https://hp-api.onrender.com/api/spells/")
                     .then(response => response.json())
                     .then(datos => setStore({ spells: datos }))
+            }, */
+            getSpells: (id) => {
+                let urls = "https://hp-api.onrender.com/api/spells/" + id
+                fetch(urls)
+                .then(response => response.json())
+                .then(datos => setStore({ spells: datos }))
             },
         }
     }
