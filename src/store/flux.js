@@ -11,10 +11,16 @@ const getStore = ({ getStore, getActions, setStore }) => {
         },
         actions: {
 
-            getCharacters: () => {
+            /* getCharacters: () => {
                 fetch("https://hp-api.onrender.com/api/characters/")
                     .then(response => response.json())
                     .then(datos => setStore({ characters: datos }))
+            }, */
+            getCharacters: (id) => {
+                let urls = "https://hp-api.onrender.com/api/characters/" + id
+                fetch(urls)
+                .then(response => response.json())
+                .then(datos => setStore({ characters: datos }))
             },
             getSpells: () => {
                 fetch("https://hp-api.onrender.com/api/spells/")
