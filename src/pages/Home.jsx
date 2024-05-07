@@ -10,6 +10,10 @@ const Home = () => {
         actions.getCharacters()
         actions.getSpells()
     }, [])
+
+    const url = "https://harry-potter-api.onrender.com/db"
+
+
     return (
 
         <>
@@ -73,4 +77,6 @@ const Home = () => {
 
     )
 }
+
+
 export default Home

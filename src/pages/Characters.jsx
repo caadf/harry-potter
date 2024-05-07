@@ -13,7 +13,7 @@ const Characters = () => {
         console.log(id)
     }, [])
 
-    const { name, gender, species, house } =
+    const { personaje, apodo, casaDeHogwarts, estudianteDeHogwarts } =
         store.characters;
 
     return (
@@ -30,10 +30,10 @@ const Characters = () => {
                     ></img> */}
                 </div>
               <div className="contenedor">
-                    <h1 className="card-title mb-5 ">{name}</h1>
-                    <p className="card-text">Gender: {gender}</p>
-                    <p className="card-text">Species: {species}</p>
-                    <p className="card-text">House: {house}</p>
+                    <h1 className="card-title mb-5 ">{personaje}</h1>
+                    <p className="card-text">Apodo: {apodo}</p>
+                    <p className="card-text">CasaDeHogwarts: {casaDeHogwarts}</p>
+                    <p className="card-text">EstudianteDeHogwarts: {estudianteDeHogwarts}</p>
                     {/* <p className="card-text">Skin Color: {skin_color}</p>
                     <p className="card-text">Eye Color: {eye_color}</p> */}
                   </div> 

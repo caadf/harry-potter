@@ -16,8 +16,8 @@ const getStore = ({ getStore, getActions, setStore }) => {
                     .then(response => response.json())
                     .then(datos => setStore({ characters: datos }))
             }, */
-            getCharacters: (id) => {
-                let urls = "https://hp-api.onrender.com/api/characters/" + id
+            getCharacters: () => {
+                let urls = "https://harry-potter-api.onrender.com/personajes"
                 fetch(urls)
                 .then(response => response.json())
                 .then(datos => setStore({ characters: datos }))
